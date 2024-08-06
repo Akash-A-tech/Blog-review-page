@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site  properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">  
+     
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    @font-face {
+      font-family: Figtree;
+      src: url("assets/fonts/static/Figtree-ExtraBold.ttf");
+    }
+    @font-face {
+      font-family:Figtree;
+      src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+    }
+    body{
+    display:flex;
+    justify-content: center;
+    background-color:hsl(47, 88%, 63%) ;
+    }
+    .outerbox {
+      border: 1px solid;
+      border-radius: 20px;
+      width:24%;     
+      margin-top:90px;
+      padding-left:20px;
+      padding-right: 4px;  
+      background-color: whitesmoke;
+      box-shadow: 8px 8px black; 
+      font-family:Figtree;     
+    }
+    .outerbox div{
+      margin-bottom: 20px;
+    }
+    
+    .Learning{      
+      border-radius: 5px;
+      background-color:hsl(47, 88%, 63%);
+      width:17%;
+      padding: 5px 8px;
+      font-family: Figtree;
+      font-weight: bolder;
+      font-size: 13px;
+    }
+    #illustration{
+      margin-top:22px;
+      border-radius: 10px;
+      width:94%;
+      height:30%;
+    }
+    #avatar{      
+      padding-top: 2px;
+      margin-right: 10px;
+      width:30px ; height:30px;
+    }
+    .author{      
+      display: flex;
+      width: 50%;
+    }
+    .author span{
+      padding: 9px 5px 0px 0px;
+    }
+    .boldletter{
+      font-weight: bolder;
+      font-size: small ;
+    }
+    .paragraph{
+      font-size: 16px;
+      line-height:25px;
+      color: hsl(0, 0%, 50%);
+    }
+    #Heading{
+      font-size:x-large;
+      font-weight: 800px;
+    }          
+  </style>
+</head>
+<body>
+  <div class="outerbox">
+  <div> <img id="illustration" src="/assets/images/illustration-article.svg"></div>
+  <div class="Learning"><span>Learning</span></div>
+
+ <div><span class="publish">Published 21 Dec 2023</span></div>
+
+  <div class="boldletter" id="Heading">HTML & CSS foundations</div>
+
+  <div class="paragraph">These languages are the backbone of every <br>
+  website, defining structure, content, and <br>presentation.</div>
+  <div class="author">
+  <img id="avatar" src="assets/images/image-avatar.webp">
+  <span class="boldletter">Greg Hooper</span>
+  </div>
+</div>
+ <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+</body> 
+</html>
